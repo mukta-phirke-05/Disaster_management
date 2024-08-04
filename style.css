@@ -1,0 +1,183 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Slider container */
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 1000px; /* Adjust as needed */
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+/* Slides container */
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Slide images */
+.slides img {
+    width: 100%;
+    flex: 0 0 100%;
+    height: auto;
+    display: block;
+}
+
+/* Taskbar */
+header {
+    background-color: #00796b; /* Teal color */
+    color: #fff;
+    padding: 15px 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+header #WebName h1 {
+    font-size: 24px;
+   text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #004d40; /* Darker teal */
+    color: #e0f2f1; /* Light cyan */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Web Description */
+.description {
+    padding: 40px;
+    text-align: center;
+    background-color: #e0f2f1; /* Light cyan */
+    color: #004d40; /* Darker teal */
+}
+
+.description h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.description p {
+    font-size: 18px;
+}
+
+/* Emergency Contact Section */
+.emergency-contact {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #00796b; /* Teal border */
+}
+
+.emergency-contact h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.emergency-contact p {
+    font-size: 18px;
+}
+
+/* Additional Features */
+.features {
+    padding: 20px;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.features .feature {
+    display: inline-block;
+    width: 22%;
+    margin: 10px;
+    background-color: #ffffff; /* White background */
+    padding: 10px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    transition: transform 0.3s ease;
+}
+
+.features .feature img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+.features .feature:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Footer */
+footer {
+    background-color: #00796b; /* Teal color */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 2px solid #004d40; /* Darker teal border */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .features .feature {
+        width: 48%;
+    }
+}
+
+@media (max-width: 480px) {
+    .features .feature {
+        width: 100%;
+    }
+}
+
+#WebName {
+    display: flex;
+    justify-content: center;
+}
+
+#Rform {
+    font-size: 20px;
+    background-color: rgb(227, 34, 34);
+}
+
+#uls {
+    font-size: 20px;
+}

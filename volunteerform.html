@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Sign-Up Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .form-container h2 {
+            text-align: center;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group textarea {
+            resize: vertical;
+        }
+        .form-group button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Volunteer Sign-Up Form</h2>
+        <form id="volunteerSignUpForm">
+            <!-- Personal Information -->
+            <div class="form-group">
+                <label for="volunteerName">Full Name</label>
+                <input type="text" id="volunteerName" name="volunteerName" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <!-- Availability -->
+            <div class="form-group">
+                <label for="availableDays">Available Days</label>
+                <select id="availableDays" name="availableDays[]" multiple required>
+                    <option value="monday">Monday</option>
+                    <option value="tuesday">Tuesday</option>
+                    <option value="wednesday">Wednesday</option>
+                    <option value="thursday">Thursday</option>
+                    <option value="friday">Friday</option>
+                    <option value="saturday">Saturday</option>
+                    <option value="sunday">Sunday</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="availableTimes">Available Times</label>
+                <input type="text" id="availableTimes" name="availableTimes" placeholder="e.g., 9 AM - 5 PM" required>
+            </div>
+
+            <!-- Skills and Experience -->
+            <div class="form-group">
+                <label for="skillsExperience">Skills and Experience</label>
+                <textarea id="skillsExperience" name="skillsExperience" rows="4" placeholder="Describe any relevant skills or experience..." required></textarea>
+            </div>
+
+            <!-- Preferred Role -->
+            <div class="form-group">
+                <label for="preferredRole">Preferred Role</label>
+                <select id="preferredRole" name="preferredRole" required>
+                    <option value="logistics">Logistics</option>
+                    <option value="on-site assistance">On-Site Assistance</option>
+                    <option value="data entry">Data Entry</option>
+                    <option value="medical aid">Medical Aid</option>
+                    <option value="food distribution">Food Distribution</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button type="submit">Sign Up as Volunteer</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('volunteerSignUpForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for signing up as a volunteer!');
+            // Here you can add code to process the form data, e.g., sending it to a server
+        });
+    </script>
+</body>
+</html>
