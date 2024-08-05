@@ -1,0 +1,49 @@
+header {
+    background-color: #00796b; /* Teal color */
+    color: #fff;
+    padding: 15px 0;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+header #WebName h1 {
+    font-size: 24px;
+   text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #004d40; /* Darker teal */
+    color: #e0f2f1; /* Light cyan */
+    border-radius: 5px; /* Rounded corners */
+}
+
+#Rform {
+    font-size: 20px;
+    background-color: rgb(227, 34, 34);
+}
+
+#uls {
+    font-size: 20px;
+}
